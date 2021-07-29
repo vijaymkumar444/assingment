@@ -1,0 +1,32 @@
+ipeline {
+        agent any
+        stages {
+                stage('Stage 1') {
+                        steps {
+                                sh '''
+                                whoiami
+                                '''
+                        }
+                }
+
+                stage('stage 2') {
+                        steps {
+                                sh '''ln -s mylink hpme/assingment
+                                '''
+                        }
+                }
+                 stage('stage 3') {
+                        steps {
+                                sh ''' du -sh
+                                '''
+                        }
+                }
+
+                stage('stage 4') {
+                        steps {
+                                        sh ''' touch jenki pid > java server
+                                '''
+                        }
+                }
+        }
+}
